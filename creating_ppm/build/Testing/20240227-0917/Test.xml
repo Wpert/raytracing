@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-g++"
+	BuildStamp="20240227-0917-Experimental"
+	Name="vpert"
+	Generator="ctest-3.28.3"
+	CompilerName="/usr/bin/g++"
+	CompilerVersion="13.2.1"
+	OSName="Linux"
+	Hostname="vpert"
+	OSRelease="6.7.6-arch1-1"
+	OSVersion="#1 SMP PREEMPT_DYNAMIC Fri, 23 Feb 2024 16:31:48 +0000"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="AuthenticAMD"
+	VendorID="Advanced Micro Devices"
+	FamilyID="23"
+	ModelID="96"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="8"
+	TotalVirtualMemory="4095"
+	TotalPhysicalMemory="15409"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="1858.5"
+	>
+	<Testing>
+		<StartDateTime>Feb 27 12:17 MSK</StartDateTime>
+		<StartTestTime>1709025450</StartTestTime>
+		<TestList/>
+		<EndDateTime>Feb 27 12:17 MSK</EndDateTime>
+		<EndTestTime>1709025450</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>
