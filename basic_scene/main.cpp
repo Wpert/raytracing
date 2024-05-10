@@ -2,6 +2,7 @@
 #include "vec3/vec3.hpp"
 #include "color.hpp"
 #include "ray.hpp"
+#include <cmath>
 
 // Check if ray hitted the sphere
 double hit_sphere(const point3& center, double radius, const ray& r) {
@@ -21,12 +22,16 @@ double hit_sphere(const point3& center, double radius, const ray& r) {
 color ray_color(const ray& r) {
     point3 center_sphere(0, 0, -1);
     auto t = hit_sphere(center_sphere, 0.5, r);
-
+    // const auto pi = M_PI_2;
     if (t > 0.0) {
         auto unit_r = unit_vector(r.direction());
         vec3 N = unit_vector(r.at(t) + vec3(0,0,1));
         // return 0.5 * color(-N.x + 1, N.y + 1, -N.z + 1);
-        return 0.5 * color(1, N.y + 1, 1);
+        // double clr = asin(N.y) / M_PI_2;
+        double clr = atan(N.y) / M_PI_2;
+        // atanh();
+        clr = exp(clr) / M_E;
+        return color(1, clr, clr);
     }
 
     vec3 unit_direction = unit_vector(r.direction());
